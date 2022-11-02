@@ -376,14 +376,14 @@
                         </ul>
                     </div>
                     <form class="form-email">
-                        <div class="form-field">
+                        <div class="form-email-field">
                             <label for="mail" class="social-text">ПіДПИШІТЬСЯ НА РОЗСИЛКУ</label>
                             <input type="email" name="mail" id="mail" placeholder="E-mail"/>
                         </div>
                         <button type="submit">
                             <span>Підписатися</span>
-                            <svg class="socialmedia-svg" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
+                            <svg width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                             </svg>
                         </button>
                     </form>
@@ -397,6 +397,27 @@
                         <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
                 </button>
+                <form class="form-modal">
+                    <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                    <div class="form-modal-field">
+                        <label for="name">Ім'я</label>
+                        <input type="text" name="name" id="name"/>
+
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel"/>
+
+                        <label for="mail">Пошта</label>
+                        <input type="email" name="mail" id="mail"/>
+
+                        <label for="comment">Коментар</label>
+                        <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="policy" id="policy"/>
+                        <label for="policy">Погоджуюся з розсилкою та приймаю <span><a class="policy-link" href=" ">Умови договору</a></span></label> 
+                    </div>
+                    <button>Відправити</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
