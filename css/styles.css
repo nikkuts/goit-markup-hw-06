@@ -739,6 +739,13 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0 solid transparent;
     border-radius: 4px;
+
+    transition: background-color var(--animation-time) var(--animation-timing-function);
+}
+
+.form-email button:hover, 
+.form-email button:focus {
+    background-color: #188CE8;
 }
 
 /* MODAL WINDOW */
@@ -884,4 +891,11 @@ textarea::placeholder {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0 solid transparent;
     border-radius: 4px;
+
+    transition: background-color var(--animation-time) var(--animation-timing-function);
+}
+
+.form-modal button:hover, 
+.form-modal button:focus {
+    background-color: #188CE8;
 }
