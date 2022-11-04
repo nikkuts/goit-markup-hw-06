@@ -801,10 +801,16 @@ body {
     color: #000000;
     background-color: var(--primary-background-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: color var(--animation-time) var(--animation-timing-function);
 }
 
 .modal-close-svg {
     fill: currentColor;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--accent-color);
 }
 
 .form-modal {
@@ -822,6 +828,10 @@ body {
     color: var(--title-text-color);
 }
 
+.form-modal-field {
+    position: relative;
+}
+
 .form-modal-field label {
     margin-bottom: 4px;
     font-weight: 400;
@@ -835,9 +845,26 @@ body {
     margin-bottom: 10px;
     width: 448px;
     height: 40px;
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+
+.icon {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+}
+
+.form-modal-field input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.form-modal-field input:focus ~ .icon {
+    fill: var(--accent-color);
+} 
 
 textarea {
     width: 448px;
