@@ -845,8 +845,6 @@ body {
     margin-bottom: 10px;
     width: 448px;
     height: 40px;
-    /* padding-top: 12px;
-    padding-bottom: 12px; */
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -883,7 +881,11 @@ textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox {
+textarea:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.form-checkbox {
     width: 425px;
     height: 24px;
     margin-top: 20px;
@@ -895,6 +897,23 @@ textarea::placeholder {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.icon-check-svg {
+    fill: none;
+}
+
+.checkbox:checked + .icon-check-svg {
+    fill: var(--accent-color);
+}
+
+
 
 .policy-link {
     color: var(--accent-color);

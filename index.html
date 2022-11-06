@@ -430,10 +430,13 @@
                         <label for="comment">Коментар</label>
                         <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="policy" id="policy"/>
-                        <label for="policy">Погоджуюся з розсилкою та приймаю <span><a class="policy-link" href=" ">Умови договору</a></span></label> 
-                    </div>
+                    <label class="form-checkbox">
+                        <input class="checkbox" type="checkbox" name="policy"/>
+                        <svg class="icon-check-svg" width="16" height="15">
+                            <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+                        </svg> 
+                        Погоджуюся з розсилкою та приймаю <span><a class="policy-link" href=" ">Умови договору</a></span>
+                    </label> 
                     <button>Відправити</button>
                 </form>
             </div>
