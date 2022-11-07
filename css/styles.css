@@ -702,6 +702,12 @@ body {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    color: rgba(255, 255, 255, 0.6);
+
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -801,6 +807,7 @@ body {
     color: #000000;
     background-color: var(--primary-background-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     transition: color var(--animation-time) var(--animation-timing-function);
 }
 
@@ -886,16 +893,11 @@ textarea:focus {
 }
 
 .form-checkbox {
+    position: relative;
     width: 425px;
     height: 24px;
     margin-top: 20px;
     margin-bottom: 30px;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 .checkbox {
@@ -906,14 +908,27 @@ textarea:focus {
 }
 
 .icon-check-svg {
-    fill: none;
+    position: absolute;
+    top: 4px;
+    fill: var(--primary-background-color);
+    border: 1px solid var(--title-text-color); 
+    border-radius: 2px; 
 }
 
 .checkbox:checked + .icon-check-svg {
     fill: var(--accent-color);
+    border: 0 solid transparent;
 }
 
-
+.policy-text {
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
 
 .policy-link {
     color: var(--accent-color);
